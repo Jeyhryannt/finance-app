@@ -1,24 +1,38 @@
 {
   "expo": {
-    "name": "keuanganku",
+    "name": "Finance",
     "slug": "keuanganku",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "ios": {
-      "supportsTablet": true
-    },
+    "icon": "./assets/icon.png",
     "android": {
+      "package": "com.jey.keuanganku",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
+        "backgroundColor": "#1A2135",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       }
     },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#1A2135"
+        }
+      ],
+      "expo-secure-store"
+    ],
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "27fdddb9-0d56-4666-940a-6a6470451a51"
+      }
     }
   }
 }
